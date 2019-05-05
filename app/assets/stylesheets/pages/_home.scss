@@ -1,1 +1,40 @@
-// Specific CSS for your home-page
+//-------------------------------------------------------------------- IMAGE CONTAINER
+.homeImageContainer {
+    height: 60vh;
+    width: 100vw;
+    background-image: url('v04-pixel-27.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Amsterdam';
+    color: white;
+    font-size: 60px;
+}
+
+//-------------------------------------------------------------------- TEXT CONTAINER
+.homepageTextContainer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 35px;
+}
+
+h2 {
+    font-family: 'Amsterdam';
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+    color: #00212C;
+    line-height: 1.2;
+    font-family: 'Blackout-Regular';
+}

@@ -1,0 +1,33 @@
+.footerContainer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h3 {
+    font-family: 'Blackout-Regular';
+    font-size: 14px;
+}
+
+.footerp {
+    font-family: 'Blackout-Regular';
+    font-size: 12px !important;
+    color: #176A64;
+}
+
+.RSVPButton {
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px 40px;
+    border: 1px solid #176A64;
+    border-radius: 50px;
+    color: #176A64;
+    font-size: 24px;
+}
+.RSVPButton:hover {
+    background-color: #176A64;
+    color: white;
+}
