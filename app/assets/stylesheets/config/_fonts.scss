@@ -14,3 +14,19 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+h2 {
+    font-family: 'Amsterdam';
+}
+
+p {
+    font-family: 'Blackout';
+}
+
+.Amsterdam {
+    font-family: 'Amsterdam' !important;
+}
+
+.large {
+    font-size: 24px;
+}
