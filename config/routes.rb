@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get 'getting_there', to: 'pages#getting_there'
   get 'accomodation', to: 'pages#accomodation'
   get 'wedding_list', to: 'pages#wedding_list'
+  get 'qa', to: 'pages#qa'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
