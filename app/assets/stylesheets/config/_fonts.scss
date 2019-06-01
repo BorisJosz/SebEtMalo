@@ -17,10 +17,7 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
 
 @font-face {
   font-family: "Amsterdam";
-  src: font-url('/fonts/Amsterdam.otf');
-  src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-       font-url('FontFile.woff') format('woff'),
-       font-url('FontFile.ttf') format('truetype')
+  src: font-url('/assets/fonts/Amsterdam.otf');
 }
 $Amsterdam: "Amsterdam";
 
@@ -29,7 +26,7 @@ p {
 }
 
 .Amsterdam {
-    font-family: $Amsterdam !important;
+
 }
 
 .large {
