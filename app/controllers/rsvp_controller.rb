@@ -6,7 +6,7 @@ class RsvpController < ApplicationController
   end
 
   def answer_1
-    RspAnswerMailer.with(params[:form]).answer_1
+    RspAnswerMailer.with(form: params[:form]).answer_1.deliver_now
     redirect_to root_path
     end
 
