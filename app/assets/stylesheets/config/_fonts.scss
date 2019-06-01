@@ -15,12 +15,21 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
 // }
 // $my-font: "Font Name";
 
+@font-face {
+  font-family: "Amsterdam";
+  src: font-url('/fonts/Amsterdam.otf');
+  src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+       font-url('FontFile.woff') format('woff'),
+       font-url('FontFile.ttf') format('truetype')
+}
+$Amsterdam: "Amsterdam";
+
 p {
     font-family: 'Blackout';
 }
 
 .Amsterdam {
-    font-family: 'Amsterdam' !important;
+    font-family: $Amsterdam !important;
 }
 
 .large {
