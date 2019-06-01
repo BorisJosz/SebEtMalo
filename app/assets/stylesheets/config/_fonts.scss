@@ -21,12 +21,18 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
 }
 $Amsterdam: "Amsterdam";
 
+@font-face {
+    font-family: "Blackout";
+    src: font-url('Blackout-Regular.otf');
+}
+$Blackout: "Blackout";
+
 p {
-    font-family: 'Blackout';
+    font-family: $Blackout;
 }
 
 .Amsterdam {
-
+    font-family: $Amsterdam !important;
 }
 
 .large {
