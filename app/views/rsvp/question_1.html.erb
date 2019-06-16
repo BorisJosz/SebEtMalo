@@ -7,8 +7,8 @@
         <%= f.text_field :nom %>
         <%= f.text_field :invite %>
         <%= f.text_area :dance_question %>
-        <%= f.radio_button "RECEPTION", "reception", label: "reception"  %>
-        <%= f.radio_button("diner", "diner" , label: "diner" ) %>
-        <%= f.radio_button("soiree", "soiree" , label: "soiree" ) %>
+        <%= f.check_box "RECEPTION", label: "reception"  %>
+        <%= f.check_box "diner",  label: "diner"  %>
+        <%= f.check_box "soiree", label: "soiree"  %>
         <%= f.submit %>
 <% end %>
