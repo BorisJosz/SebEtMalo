@@ -1,3 +1,5 @@
+//= require_self
+
 console.log("testing the script");
 $(document).ready(function() {
     function onLoadAnimation(animationDelay){
