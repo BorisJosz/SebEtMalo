@@ -1,29 +1,21 @@
 .accomodationContainer {
-    background-color: #0A3B61;
+    max-height: 100vh;
+    overflow-y: scroll;
+    padding: 5vw;
 }
 
-.accomodationInnerContainer {
-    padding-left: 20vw;
-    padding-right: 20vw;
-    padding-top: 20px;
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
-    color: #0A3B61;
-    p {
-        font-family: $Blackout;
-        font-size: 24px;
-    }
+.titleText {
+    font-family: 'Amsterdam';
+    font-size: 26px;
+    overflow: visible;
 }
-.accomodationTitle {
-    display: flex;
-    align-items: center;
-    h1 {
-        font-size: 36px;
-        margin-left: 10px;
-    }
-}
-.accomodationIcon {
-    height: 250px;
+
+p {overflow: visible;}
+
+.pinkBG {
+    background: #F9A9AC;
+}   
+
+.pinkText {
+    color: #F9A9AC;
 }
