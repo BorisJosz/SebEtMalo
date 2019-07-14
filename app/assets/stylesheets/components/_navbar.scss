@@ -1,13 +1,38 @@
 .navBar {
-  background-color: white;
-  display: flex;
-  justify-content: flex-start;
-  padding-right: 100px;
+  position: fixed;
+  z-index: 100;
+  background-color: transparent;
 }
 
-.navbarText a {
-  font-family: 'Amsterdam';
-  font-size: 12px;
-  padding: 20px;
-  color: black;
+
+.navbarText {
+  margin-top: 10px;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  a {
+    line-height: 50px;
+    padding-right: 15px;
+    font-family: 'Amsterdam';
+    font-size: 12px;
+    color: white;
+  }
+}
+
+.navbarArrow {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  i {
+    font-size: 25px;
+    color: white;
+  }
+}
+
+.invisible {
+  display: none;
+}
+
+.flip { 
+  transform: rotate(-180deg);
 }
