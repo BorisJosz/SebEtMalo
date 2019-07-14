@@ -1,5 +1,5 @@
-<div class="navBar">
-    <div class="navbarText" id="navBar">
+<div class="navBar" id="navBar" >
+    <div class="navbarText">
         <%= link_to "Home", root_path %>
         <%= link_to "Schedule", schedule_path %>
         <%= link_to "Getting There", getting_there_path %>
@@ -7,15 +7,16 @@
         <%= link_to "Wedding List", wedding_list_path %>
         <%= link_to "Q & A", qa_path %>
     </div>
+    <br><br>
     <div class="navbarArrow" onclick="navBar()">
-        <i id="navbarArrow" class="fas fa-angle-up"></i>
+        <i id="navbarArrow" class="fas fa-angle-down arrowRemove arrowAnimate"></i>
     </div>
 </div>
 
 <script type="text/javascript">
 
 function navBar() {
-    document.getElementById("navBar").classList.toggle("invisible");
+    document.getElementById("navBar").classList.toggle("moveDown");
     document.getElementById("navbarArrow").classList.toggle("flip");
 }
 

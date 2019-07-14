@@ -2,6 +2,7 @@
   position: fixed;
   z-index: 100;
   background-color: transparent;
+  top: -80px;
 }
 
 
@@ -29,10 +30,51 @@
   }
 }
 
-.invisible {
-  display: none;
+.arrowRemove{
+  margin-left: 10px;
+}
+.arrowAnimate {
+    animation: slide 1s ease-in-out infinite;
+    -webkit-animation: slide 1s ease-in-out infinite;
+    -moz-animation: slide 1s ease-in-out infinite;
+
+}
+@keyframes slide {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(0, 5px);
+    }
 }
 
-.flip { 
-  transform: rotate(-180deg);
+.moveDown {
+  animation: moveDown 1s ease-in forwards;
+  -webkit-animation: moveDown 1s ease-in forwards;
+  -moz-animation: moveDown 1s ease-in forwards;
+}
+@keyframes moveDown {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(0, 80px);
+  }
+}
+
+.flip {
+  animation: rotate180 1s linear forwards;
+  -webkit-animation: rotate180 1s linear forwards;
+  -moz-animation: rotate180 1s linear forwards;
+}
+
+@keyframes rotate180 {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(180deg);
+  }
 }
