@@ -20,7 +20,7 @@ $(document).ready(function() {
 	
 	setTimeout(function(){
 		onLoadAnimation(0);
-	}, 3000);
+	}, 5000);
 
 	// $(document).mousemove(function(event){
 	// 	$(".leftSide").addClass("lightBlue");
