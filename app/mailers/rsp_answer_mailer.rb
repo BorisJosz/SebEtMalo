@@ -7,7 +7,7 @@ class RspAnswerMailer < ApplicationMailer
   def answer_1
     @form = params[:form]
 
-    mail to: "maloetseb19@gmail.com"
+    mail to: "maloetseb2019@gmail.com"
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
