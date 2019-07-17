@@ -6,14 +6,6 @@ Rails.application.configure do
 
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
-    domain:               'www.maloetseb.be',
-    user_name:            ENV['GMAIL_ADDRESS'],
-    password:             ENV['GMAIL_APP_PASSWORD'],
-    authentication:       'plain',
-    enable_starttls_auto: true }
   config.action_mailer.default_url_options = { host: "www.maloetseb.be" }
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
