@@ -22,9 +22,14 @@ $(document).ready(function() {
 
 	if (!readCookie("adSeen")) {
 		createCookie("adSeen", "1", 1000);
-		console.log("creating cookie")
 	} else {
 		document.getElementById("introAnimation").classList.add("invisible");
+		$(".mainOpening").hide(0, function(){
+			$(".mainRainContainer").delay(0).css({
+				display: "block",
+				opacity: "1"
+			});
+		});
 	}
 
 	function createCookie(name, value, days) {
@@ -37,7 +42,6 @@ $(document).ready(function() {
     }
 
     function readCookie(name) {
-		console.log("cookie read?");
         var nameEQ = name + "=";
         var ca = document.cookie.split(';');
         for (var i = 0; i < ca.length; i++) {
