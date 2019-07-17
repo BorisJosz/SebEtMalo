@@ -20,17 +20,33 @@ $(document).ready(function() {
 		onLoadAnimation(0);
 	}, 5000);
 
-	// $(document).mousemove(function(event){
-	// 	$(".leftSide").addClass("lightBlue");
-	// 	$(".leftSide").removeClass("lightGreen");
-	// });
-
-	var isMoving=false;
-
-	function navigateTo(){
-		isMoving = true;
-		setTimeout(function() {
-			isMoving=false;
-		}, 2000);
+	if (!readCookie("adSeen")) {
+		createCookie("adSeen", "1", 1000);
+		console.log("creating cookie")
+	} else {
+		document.getElementById("introAnimation").classList.add("invisible");
 	}
+
+	function createCookie(name, value, days) {
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            var expires = "; expires=" + date.toGMTString();
+        } else var expires = "";
+		document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    function readCookie(name) {
+		console.log("cookie read?");
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+	
+
 });
