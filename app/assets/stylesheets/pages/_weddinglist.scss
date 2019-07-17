@@ -1,38 +1,10 @@
-.scheduleContainer {
-    max-height: 100vh;
-    overflow-y: scroll;
-    padding: 5vw;
-    color: #0A3B61;
-    p {
-        font-size: 24px;
-    }
-    ul {
-        list-style: none;
-        li {
-            font-family: 'Blackout';
-            font-size: 24px;
-        }
-    }
-}
-.scheduleTitle {
-    display: flex;
-    align-items: center;
-    h1 {
-        font-size: 36px;
-        margin-left: 10px;
-    }
-}
-.scheduleIcon {
-    height: 250px;
-}
-
-.white {
-    color: white;
-}
-
 .secondaryTitleText {
     font-family: "Amsterdam";
     line-height: 70px;
+}
+
+p {
+    overflow: visible;
 }
 
 .lightBlueText {

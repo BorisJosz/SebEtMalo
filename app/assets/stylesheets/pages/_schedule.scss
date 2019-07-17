@@ -1,6 +1,6 @@
 .scheduleContainer {
     max-height: 100vh;
-    overflow-y: scroll;
+    overflow: auto;
     padding: 5vw;
     color: #0A3B61;
     p {
@@ -14,24 +14,9 @@
         }
     }
 }
-.scheduleTitle {
-    display: flex;
-    align-items: center;
-    h1 {
-        font-size: 36px;
-        margin-left: 10px;
-    }
-}
+
 .scheduleIcon {
     height: 250px;
-}
-
-.white {
-    color: white;
-}
-
-.secondaryTitleText {
-    font-family: "Amsterdam";
 }
 
 .pinkText {

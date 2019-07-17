@@ -1,7 +1,5 @@
-console.log("testing the script");
 $(document).ready(function() {
     function onLoadAnimation(animationDelay){
-		console.log("Function Called");
 		$(".layer1").delay(400 + animationDelay).hide("scale", {percent: 2000, direction: 'verticle'}, 2500 );
 		$(".layer2").delay(400 + animationDelay).hide("scale", {percent: 2000, direction: 'verticle'}, 5000 );
 		$(".layer3").delay(400 + animationDelay).hide("scale", {percent: 2000, direction: 'verticle'}, 8000 );
@@ -28,13 +26,6 @@ $(document).ready(function() {
 	// });
 
 	var isMoving=false;
-
-	$(document).bind("mousewheel DOMMouseScroll MozMousePixelScroll", function(event, delta) {
-		event.preventDefault();
-		if (isMoving) return;
-		navigateTo();
-		onLoadAnimation(0);
-	});
 
 	function navigateTo(){
 		isMoving = true;

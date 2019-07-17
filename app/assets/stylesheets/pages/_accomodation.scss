@@ -1,27 +1,8 @@
-.accomodationContainer {
-    max-height: 100vh;
-    overflow-y: scroll;
-    padding: 5vw;
-    color: #0A3B61;
-    p {
-        font-size: 24px;
-    }
-    ul {
-        list-style: none;
-        li {
-            font-family: 'Blackout';
-            font-size: 24px;
-        }
-    }
-}
-
 .titleText {
     font-family: 'Amsterdam';
     font-size: 26px;
     line-height: initial;
 }
-
-p {overflow: visible;}
 
 .purpleBG {
     background: #555BE1;
