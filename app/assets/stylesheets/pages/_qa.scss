@@ -1,22 +1,20 @@
-.qaContainer {
-    background-color: #176A64;
-}
-
-.qaInnerContainer {
-    padding-left: 20vw;
-    padding-right: 20vw;
-    padding-top: 20px;
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
+.scheduleContainer {
+    max-height: 100vh;
+    overflow-y: scroll;
+    padding: 5vw;
     color: #0A3B61;
     p {
-        font-family: 'Blackout';
         font-size: 24px;
     }
+    ul {
+        list-style: none;
+        li {
+            font-family: 'Blackout';
+            font-size: 24px;
+        }
+    }
 }
-.qaTitle {
+.scheduleTitle {
     display: flex;
     align-items: center;
     h1 {
@@ -24,6 +22,21 @@
         margin-left: 10px;
     }
 }
-.qaIcon {
+.scheduleIcon {
     height: 250px;
+}
+
+.white {
+    color: white;
+}
+
+.secondaryTitleText {
+    font-family: "Amsterdam";
+}
+
+.darkBlueText {
+    color: #2DC3EF;
+}
+.darkBlueBG {
+    background-color: #2DC3EF;
 }

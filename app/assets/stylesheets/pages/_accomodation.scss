@@ -2,20 +2,31 @@
     max-height: 100vh;
     overflow-y: scroll;
     padding: 5vw;
+    color: #0A3B61;
+    p {
+        font-size: 24px;
+    }
+    ul {
+        list-style: none;
+        li {
+            font-family: 'Blackout';
+            font-size: 24px;
+        }
+    }
 }
 
 .titleText {
     font-family: 'Amsterdam';
     font-size: 26px;
-    overflow: visible;
+    line-height: initial;
 }
 
 p {overflow: visible;}
 
-.pinkBG {
+.purpleBG {
     background: #555BE1;
 }   
 
-.pinkText {
+.purpleText {
     color: #555BE1;
 }

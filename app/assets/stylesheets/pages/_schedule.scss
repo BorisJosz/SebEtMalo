@@ -1,11 +1,7 @@
 .scheduleContainer {
-    padding-left: 20vw;
-    padding-top: 20px;
-    background-color: #A4DEC6;
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
+    max-height: 100vh;
+    overflow-y: scroll;
+    padding: 5vw;
     color: #0A3B61;
     p {
         font-size: 24px;
@@ -32,4 +28,15 @@
 
 .white {
     color: white;
+}
+
+.secondaryTitleText {
+    font-family: "Amsterdam";
+}
+
+.pinkText {
+    color: #F89999;
+}
+.pinkBG {
+    background-color: #F89999;
 }
