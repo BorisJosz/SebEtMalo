@@ -3,6 +3,8 @@
   z-index: 100;
   background-color: transparent;
   top: -80px;
+  transform: translate(0,0);
+  transition: all 2s ease-in;
 }
 
 
@@ -60,17 +62,7 @@
 }
 
 .moveDown {
-  animation: moveDown 1s ease-in forwards;
-  -webkit-animation: moveDown 1s ease-in forwards;
-  -moz-animation: moveDown 1s ease-in forwards;
-}
-@keyframes moveDown {
-  0% {
-    transform: translate(0,0);
-  }
-  100% {
-    transform: translate(0, 80px);
-  }
+  transform: translate(0, 80px);
 }
 
 .flip {
