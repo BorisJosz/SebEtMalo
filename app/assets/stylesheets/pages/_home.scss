@@ -134,12 +134,22 @@
 }
 
 #navBarMobile {
-    z-index: -10000;
+    display: none;
 }
 .mobileMenuButton {
     display: none;
 }
 @media only screen and (max-width: 992px) {
+
+    .scheduleContainer {
+        width: 80vw;
+        p {
+            
+        }
+    }
+
+
+//----------------------------------------- NAVBAR 
     #navBar {
         display: none;
     }
