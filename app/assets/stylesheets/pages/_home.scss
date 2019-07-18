@@ -133,7 +133,90 @@
     display: inline-block;
 }
 
+#navBarMobile {
+    z-index: -10000;
+}
+.mobileMenuButton {
+    display: none;
+}
 @media only screen and (max-width: 992px) {
+    #navBar {
+        display: none;
+    }
+    .navbarMobileText {
+        display: flex;
+        flex-direction: column;
+        a {
+            line-height: 50px;
+            margin-bottom: 10px;
+            font-family: 'Amsterdam';
+            font-size: 12px;
+            color: #0A3B61;
+        }
+    }
+
+//----------------------------------------- NAVBAR ANIMATION
+    #navBarMobile {
+        z-index: 10;
+        position: absolute;
+        transform: translate(-100vw,0);
+        -webkit-transition: all 2s ease-in-out;
+        -moz-transition: all 2s ease-in-out;
+        transition: all 2s ease-in-out;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .moveRight {
+        transform: translate(0vw,0) !important;
+    }
+
+//----------------------------------------- CROSS ANIMATION
+
+    .mobileMenuButton {
+        display: block;
+        z-index: 100;
+        color: white;
+    }
+
+    #closeCross {
+        color: #0A3B61;
+        opacity: 0;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+    }
+    .getVisible {
+        opacity: 100 !important;
+        -webkit-transition: opacity 3s ease-in-out !important;
+        -moz-transition: opacity 3s ease-in-out !important;
+        transition: opacity 3s ease-in-out !important;
+    }
+    
+//----------------------------------------- BURGER MENU ANIMATION
+    .mobileMenuButton {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        overflow: visible;
+        animation:heartBeat 10s ease infinite;
+        @keyframes heartBeat {
+            0% {
+                font-size: 26px;
+            }
+            50% {
+                font-size: 28px;
+            }
+            100% {
+                font-size: 26px;
+            }
+        }
+        
+    }
+
     /* .theContainer {
         visibility: hidden;
         display: none;

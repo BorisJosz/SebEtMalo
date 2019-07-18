@@ -22,3 +22,35 @@ function navBar() {
 }
 
 </script>
+
+<div class="mobileMenuButton" onclick="mobileMenu()">
+    <i class="fas fa-bars"></i>
+</div>
+<div class="mobileMenuButton" onclick="mobileMenuClose()" id="closeCross">
+    <i class="fas fa-times"></i>
+</div>
+
+<div id="navBarMobile" >
+    <div class="navbarMobileText">
+        <%= link_to "Home", root_path %>
+        <%= link_to "Schedule", schedule_path %>
+        <%= link_to "Getting There", getting_there_path %>
+        <%= link_to "Accomodations", accomodation_path %>
+        <%= link_to "Wedding List", wedding_list_path %>
+        <%= link_to "Q & A", qa_path %>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+function mobileMenu() {
+    document.getElementById("navBarMobile").classList.toggle("moveRight");
+    document.getElementById("closeCross").classList.toggle("getVisible");
+}
+
+function mobileMenuClose() {
+    document.getElementById("navBarMobile").classList.toggle("moveRight");
+    document.getElementById("closeCross").classList.toggle("getVisible");
+}
+
+</script>
