@@ -6,6 +6,9 @@
   transform: translate(0,0);
   transition: all 2s ease-in;
 }
+.moveDown {
+  transform: translate(0, 80px);
+}
 
 
 .navbarText {
@@ -40,14 +43,21 @@
     color: white;
   }
 }
+#navbarArrow {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transition: all 2s ease-in !important;
+}
+.flip {
+  transform: rotate(180deg) !important;
+  -webkit-transform: rotate(180deg) !important;
+}
 
 .arrowRemove{
   margin-left: 10px;
 }
 .arrowAnimate {
     animation: slide 1s ease-in-out infinite;
-    -webkit-animation: slide 1s ease-in-out infinite;
-    -moz-animation: slide 1s ease-in-out infinite;
 
 }
 @keyframes slide {
@@ -59,23 +69,4 @@
     50% {
       transform: translate(0, 5px);
     }
-}
-
-.moveDown {
-  transform: translate(0, 80px);
-}
-
-.flip {
-  animation: rotate180 1s linear forwards;
-  -webkit-animation: rotate180 1s linear forwards;
-  -moz-animation: rotate180 1s linear forwards;
-}
-
-@keyframes rotate180 {
-  0% {
-    transform: rotate(0deg)
-  }
-  100% {
-    transform: rotate(180deg);
-  }
 }
