@@ -146,6 +146,35 @@
     display: none;
 }
 
+//------------------------------------------------------------------------------------------------ IPAD MEDIA QUERY
+@media only screen and (width: 768px) and (height: 1024px) {
+    .col-md-6 {
+        flex: 100%;
+        max-width: 120vw;
+    }
+
+}
+//------------------------------------------------------------------------------------------------ IPAD PRO MEDIA QUERY
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .navBar {
+        top: -760px;
+    }
+    .moveDown {
+        transform: translate(0,760px)
+    }
+    .navbarText {
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            font-size: 26px;
+            line-height: 120px;
+        }
+    }
+}
+
+
 //------------------------------------------------------------------------------------------------ MOBILE MEDIA QUERY
 
 @media only screen and (max-width: 992px) {
