@@ -13,3 +13,11 @@ p {
 .lightBlueBG {
     background-color: #62FFDA;
 }
+
+@media only screen and (max-width: 992px) {
+
+    .lightBlueText {
+        color: white;
+    }
+
+}

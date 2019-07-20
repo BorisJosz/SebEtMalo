@@ -11,3 +11,11 @@
 .purpleText {
     color: #555BE1;
 }
+
+@media only screen and (max-width: 992px) {
+
+    .purpleText {
+        color: white;
+    }
+
+}

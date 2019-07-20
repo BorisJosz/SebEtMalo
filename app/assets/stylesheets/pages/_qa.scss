@@ -4,3 +4,11 @@
 .darkBlueBG {
     background-color: #2DC3EF;
 }
+
+@media only screen and (max-width: 992px) {
+
+    .darkBlueText {
+        color: white;
+    }
+
+}

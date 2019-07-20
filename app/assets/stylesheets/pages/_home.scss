@@ -1,3 +1,6 @@
+.clickThrough {
+    pointer-events: none;
+}
 .invisible {
     display: none;
 }
@@ -142,6 +145,9 @@
 .i4ewOd-pzNkMb-haAclf {
     display: none;
 }
+
+//------------------------------------------------------------------------------------------------ MOBILE MEDIA QUERY
+
 @media only screen and (max-width: 992px) {
 
     .scheduleContainer {
@@ -149,6 +155,10 @@
         p {
             font-size: 18px;
         }
+    }
+    .secondaryTitleText {
+        line-height: 3 !important;
+        overflow: visible;
     }
 
 
@@ -173,9 +183,9 @@
         z-index: 10;
         position: absolute;
         transform: translate(-100vw,0);
-        -webkit-transition: all 2s ease-in-out;
-        -moz-transition: all 2s ease-in-out;
-        transition: all 2s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
         width: 100vw;
         height: 100vh;
         background-color: white;
