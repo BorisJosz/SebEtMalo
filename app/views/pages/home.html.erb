@@ -3,20 +3,20 @@
         <%= image_tag  "openInWeb.svg", :class => "img-responsive" %>
     </div>
 </div>
-<div class="mainOpening onlyWebLoad" id="introAnimation">
-    <div class="invitationText">
+<div class="mainOpening onlyWebLoad" id="introAnimation" onclick="introAnimation()">
+    <div class="invitationText" id="couponAnimation">
         <%= image_tag  "together-with-your-family.svg" %>
     </div>
-    <div class="layer1 imgLayer">
+    <div class="layer1 imgLayer" id="leafLayer1">
         <%= image_tag  "layer1.svg" %>
     </div>
-    <div class="layer2 imgLayer">
+    <div class="layer2 imgLayer" id="leafLayer2">
         <%= image_tag  "layer2.svg" %>
     </div>
-    <div class="layer3 imgLayer">
+    <div class="layer3 imgLayer" id="leafLayer3">
         <%= image_tag  "layer3.svg" %>
     </div>
-    <div class="layer4"></div>
+    <div class="layer4" id="bgLayerAnimation"></div>
 </div>
 <div class="theContainer">
             <div class="mainImages clickThrough">
@@ -798,3 +798,21 @@
                 </div>
             </div>
         </div>
+
+<script type="text/javascript">
+
+function introAnimation() {
+    document.getElementById("leafLayer1").classList.add("leafAnimation1");
+    document.getElementById("leafLayer2").classList.add("leafAnimation2");
+    document.getElementById("leafLayer3").classList.add("leafAnimation3");
+    document.getElementById("couponAnimation").classList.add("couponAnimation");
+    document.getElementById("bgLayerAnimation").classList.add("couponAnimation");
+
+    var delayInMilliseconds = 4000;
+
+    setTimeout(function() {
+        document.getElementById("introAnimation").classList.add("invisible");
+    }, delayInMilliseconds);
+    };
+
+</script>

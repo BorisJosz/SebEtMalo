@@ -121,6 +121,65 @@
     z-index: 1996;
     position: absolute;
 }
+//------------------------------------------------------------------- INTRO ANIMATION
+//------------------------------------------------ LEAVES
+.leafAnimation1 {
+    animation: leafAnimation1 4s ease-in forwards;
+}
+@keyframes leafAnimation1 {
+    100% {
+        transform: scale(6);
+        opacity: 0;
+    }
+    
+    0% {
+        transform: scale(1);
+    }
+}
+.leafAnimation2 {
+    animation: leafAnimation2 4s ease-in forwards;
+}
+@keyframes leafAnimation2 {
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+    
+    25% {
+        transform: scale(1);
+    }
+}
+.leafAnimation3 {
+    animation: leafAnimation3 4s ease-in forwards;
+}
+@keyframes leafAnimation3 {
+    100% {
+        transform: scale(6);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(3);
+    }
+    
+    0% {
+        transform: scale(1);
+    }
+}
+
+//------------------------------------------------ INVITATION
+.couponAnimation {
+    animation: couponAnimation 4s ease-in forwards;
+}
+@keyframes couponAnimation {
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
 .locationImage{
     cursor: pointer;
     position: fixed;
