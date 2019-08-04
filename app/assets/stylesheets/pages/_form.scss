@@ -1,0 +1,111 @@
+.flexRow {
+    display: flex;
+    justify-content: space-between;
+    input {
+        border: none;
+        border-bottom: 2px #62FFDA solid;
+        transition: all 1s ease;
+        font-family: "Blackout";
+        color: #62FFDA;
+        font-size: 26px;
+        &:hover {
+            border : 2px #62FFDA solid;
+        }
+    }
+    label {
+        margin: 0;
+        padding: 0;
+        font-family: "Blackout";
+        font-size: 18px;
+        color: #323159;
+    }
+}
+
+.flexRowItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer {
+    max-height: 100vh;
+    overflow: auto;
+    padding: 5vw;
+    color: #0A3B61;
+    p {
+        font-size: 20px;
+    }
+    ul {
+        list-style: none;
+        li {
+            font-family: 'Blackout';
+            font-size: 20px;
+        }
+    }
+    .secondaryTitleText {
+        font-size: 24px;
+        overflow: visible;
+    }
+}
+
+.formInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .titleText {
+        color: #62FFDA;
+        font-size: 24px;
+    }
+}
+.flexRowCheckbox {
+    display: flex;
+    justify-content: space-between;
+    label {
+        margin: 0;
+        padding: 0;
+        font-family: "Blackout";
+        font-size: 24px;
+        color: #62FFDA;
+    }
+    input[type="radio"], input[type="checkbox"] {
+        height: 30px;
+        width: 30px;
+    }
+}
+.formSubmit {
+    display: flex;
+    justify-content: center;
+    input {
+        background-color: #62FFDA;
+        font-family: "Blackout";
+        font-size: 24px;
+        color: white;
+        border: none;
+        border-radius: 60px;
+        height: 60px;
+        padding: 0px 10px;
+        transition: all 0.5s ease;
+        &:hover {
+            background-color: white;
+            border: 2px #62FFDA solid;
+            color: #62FFDA;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .formContainer {
+        p {
+            font-size: 14px;
+        }
+        .secondaryTitleText {
+            font-size: 18px;
+        }
+    }
+
+    .titleText {
+        font-size: 18px !important;
+    }
+
+}
+
