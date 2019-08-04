@@ -13,11 +13,47 @@ p {
 .lightBlueBG {
     background-color: #62FFDA;
 }
+.scheduleContainer {
+    a {
+        background-color: #62FFDA;
+        height: auto;
+        width: auto;
+        padding: 15px;
+        border-radius: 40px;
+        color: white;
+        cursor-event: pointer;
+        transition: all 0.3s ease-in;
+        text-decoration: none;
+        &:hover {
+            background-color: white;
+            color: #62FFDA;
+            border: 2px #62FFDA solid;
+        }
+    }
+}
 
 @media only screen and (max-width: 992px) {
 
     .lightBlueText {
         color: white;
+    }
+    .scheduleContainer {
+        a {
+            background-color: white;
+            height: auto;
+            width: auto;
+            padding: 10px;
+            border-radius: 40px;
+            color: #62FFDA;
+            border: 2px white solid;
+            cursor-event: pointer;
+            transition: all 0.3s ease-in;
+            text-decoration: none;
+            &:hover {
+                background-color: #62FFDA;
+                color: white;
+            }
+        }
     }
 
 }
