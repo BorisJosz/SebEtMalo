@@ -99,12 +99,20 @@
             font-size: 14px;
         }
         .secondaryTitleText {
+            color: white;
             font-size: 18px;
         }
     }
 
     .titleText {
         font-size: 18px !important;
+        color: white !important;
+    }
+
+    .flexRowCheckbox {
+        label {
+            color: white;
+        }
     }
 
 }

@@ -13,9 +13,91 @@
                 <div class="col-md-6 no-padding">
                     <div class="leftSide lightBlueBG">
                         <div class="onlymWeb">
-                             <div class="scheduleContainer">
+                             <div class="formContainer">
                                 
-                                
+                                <br><br><br><br><br><br><br><br>
+                            <div class="formInfoContainer">
+                                <p>Together with their parents
+                                </br>Marie-Laure Léonard & Sebastiaan Claes 
+                                </br>Request the honor of your presence at their marriage</p>
+                                <br>
+                                <p>At l’Eglise Saint-Martin
+                                </br>Saturday, October 5th, 2019
+                                </br<>2.00 o’clock in the afternoon
+                                </br<>1390 Grez-Doiceau, Belgium</p>
+                                <br>
+                                <p class="titleText">Reception</p>
+                                <p>Mrs François Léonard
+                                </br>Mrs André Claes
+                                </br>Invite you at la ferme d’Arnelle 
+                                </br>On Saturday, October 5th from 4.00 to 6.30 pm</p>
+                                <br>
+                                <p class="titleText">Dinner</p>
+                                <p>Ms. and Mrs. François Léonard
+                                </br>Ms. and Mrs. André Claes
+                                </br>Are delighted to invite you to the dinner that they will give 
+                                </br>at la ferme d’Arnelle for the wedding of their children, 
+                                </br>Marie-Laure and Sebastiaan
+                                </br>On Saturday, October 5th from 7.00 to 10.30 pm.</p>
+                                <br>
+                                <p class="titleText">Party</p>
+                                <p>Malo & Seb 
+                                </br>Are happy to welcome you
+                                </br>to their wedding party at la ferme d’Arnelle
+                                </br>On Saturday, October 5th at 10.30 pm.</p>
+                                <br><br>
+                                <p>Which parts will you attend?</p>
+                            </div>
+                            <br><br><br>
+                            <%= form_for :form, url: answer_1_path  do |f|%>
+                                <div class="flexRow">
+                                    <div class="flexRowItem">
+                                        <%= f.label :prenom, 'First Name'%>
+                                        <%= f.text_field :prenom %>
+                                    </div>
+                                    <div class="flexRowItem">
+                                        <%= f.label :nom, 'Last Name'%>
+                                        <%= f.text_field :nom %>    
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="flexRow">
+                                    <div class="flexRowItem">
+                                        <%= f.label :invite, 'Will you be bringing someone? If so, name him/her down below' %>
+                                        <%= f.text_field :invite %>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="flexRow">
+                                    <div class="flexRowItem">
+                                        <%= f.label :invite, 'Which song makes you dance all night long?' %>
+                                        <%= f.text_field :dance_question %>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="flexRowCheckbox">
+                                    <%= f.label :RECEPTION, 'Reception' %>
+                                    <%= f.check_box "RECEPTION", label: "reception"  %>
+                                </div>
+                                <br>
+                                <div class="flexRowCheckbox">
+                                    <%= f.label :diner, 'Dinner' %>
+                                    <%= f.check_box "diner",  label: "diner"  %>
+                                </div>
+                                <br>
+                                <div class="flexRowCheckbox">
+                                    <%= f.label :soiree, 'Party' %>
+                                    <%= f.check_box "soiree", label: "soiree"  %>
+                                </div>
+                                <br>
+                                <div class="formSubmit">
+                                    <%= f.submit "Confirm Invitation"%>
+                                <div>
+                            <% end %>
+
+                        <br><br><br><br><br><br><br><br><br><br><br><br>
+                        </div>
+                        </div>
 
                             </div>
                         </div>
