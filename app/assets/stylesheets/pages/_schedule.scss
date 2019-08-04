@@ -13,6 +13,10 @@
             font-size: 24px;
         }
     }
+    .secondaryTitleText {
+        font-size: 24px;
+        overflow: visible;
+    }
 }
 
 .scheduleIcon {
@@ -30,6 +34,12 @@
     .scheduleContainer {
         p {
             font-size: 14px;
+        }
+        .secondaryTitleText {
+            font-size: 18px;
+        }
+        .gettingthereIconMedium {
+            font-size: 16px;
         }
     }
 

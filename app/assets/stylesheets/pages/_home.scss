@@ -217,10 +217,10 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .navBar {
-        top: -760px;
+        top: -500px;
     }
     .moveDown {
-        transform: translate(0,760px)
+        transform: translate(0,500px)
     }
     .navbarText {
         flex-direction: column;

@@ -4,9 +4,7 @@ Rails.application.routes.draw do
   post "answer_1", to: "rsvp#answer_1"
   post "answer_2", to: "rsvp#answer_2"
   root to: 'pages#home'
-  get 'schedule', to: 'pages#schedule'
-  get 'getting_there', to: 'pages#getting_there'
-  get 'accomodation', to: 'pages#accomodation'
+  get 'practical_information', to: 'pages#practical_information'
   get 'wedding_list', to: 'pages#wedding_list'
   get 'qa', to: 'pages#qa'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
