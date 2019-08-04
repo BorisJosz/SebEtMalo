@@ -5,7 +5,10 @@
 </div>
 <div class="mainOpening onlyWebLoad" id="introAnimation" onclick="introAnimation()">
     <div class="invitationText" id="couponAnimation">
+        <div style="display: flex; flex-direction: column; align-items:center; justify-content:center;">
         <%= image_tag  "together-with-your-family.svg" %>
+        <p onclick="introAnimation()" class="clickHere" style="color: #323159;" id="clickHere"> Click <p>
+        </div>
     </div>
     <div class="layer1 imgLayer" id="leafLayer1">
         <%= image_tag  "layer1.svg" %>
@@ -55,6 +58,7 @@ function introAnimation() {
     document.getElementById("leafLayer3").classList.add("leafAnimation3");
     document.getElementById("couponAnimation").classList.add("couponAnimation");
     document.getElementById("bgLayerAnimation").classList.add("couponAnimation");
+    document.getElementById("clickHere").classList.add("noOpacity");
 
     var delayInMilliseconds = 4000;
 
