@@ -8,6 +8,7 @@
         font-family: "Blackout";
         color: #62FFDA;
         font-size: 26px;
+        margin-right: 20px;
         &:hover {
             border : 2px #62FFDA solid;
         }
@@ -26,6 +27,7 @@
 .flexRowItem {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .formContainer {
@@ -96,6 +98,11 @@
 }
 
 @media only screen and (max-width: 992px) {
+    .scheduleContainer {
+        .saturday {
+            font-family: "Blackout";
+        }
+    }
     .formContainer {
         p {
             font-size: 14px;
@@ -107,13 +114,20 @@
     }
 
     .titleText {
-        font-size: 18px !important;
+        font-size: 24px !important;
         color: white !important;
     }
 
     .flexRowCheckbox {
         label {
             color: white;
+        }
+    }
+
+    .formSubmit {
+        input {
+            background-color: white;
+            color: #62FFDA
         }
     }
 

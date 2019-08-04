@@ -23,8 +23,8 @@
                                 <br>
                                 <p>At l’Eglise Saint-Martin
                                 </br>Saturday, October 5th, 2019
-                                </br<>2.00 o’clock in the afternoon
-                                </br<>1390 Grez-Doiceau, Belgium</p>
+                                </br>2.00 o’clock in the afternoon
+                                </br>1390 GREZ-DOICEAU, BELGIUM</p>
                                 <br>
                                 <p class="titleText">Reception</p>
                                 <p>Mrs François Léonard
@@ -45,34 +45,30 @@
                                 </br>Are happy to welcome you
                                 </br>to their wedding party at la ferme d’Arnelle
                                 </br>On Saturday, October 5th at 10.30 pm.</p>
-                                <br><br>
-                                <p>Which parts will you attend?</p>
                             </div>
                             <br><br><br>
                             <%= form_for :form, url: answer_1_path  do |f|%>
                                 <div class="flexRow">
                                     <div class="flexRowItem">
-                                        <%= f.label :prenom, 'First Name'%>
+                                        <%= f.label :prenom, 'First Name(s)'%>
                                         <%= f.text_field :prenom %>
                                     </div>
+                                    <div style="width: 10px;"></div>
                                     <div class="flexRowItem">
-                                        <%= f.label :nom, 'Last Name'%>
+                                        <%= f.label :nom, 'Last Name(s)'%>
                                         <%= f.text_field :nom %>    
                                     </div>
                                 </div>
                                 <br><br>
                                 <div class="flexRow">
                                     <div class="flexRowItem">
-                                        <%= f.label :invite, 'Will you be bringing someone? If so, name him/her down below' %>
-                                        <%= f.text_field :invite %>
+                                        <%= f.label :invite, 'Which song makes you dance all night long?' %>
+                                        <%= f.text_field :dance_question %>
                                     </div>
                                 </div>
                                 <br><br>
-                                <div class="flexRow">
-                                    <div class="flexRowItem">
-                                        <%= f.label :invite, 'Which song makes you dance all night long?' %>
-                                        <%= f.text_field :dance_question, id: 'danceQuestion' %>
-                                    </div>
+                                <div style="display: flex; justify-content: center;">
+                                    <p style="font-size: 24px;">Which parts will you attend?</p>
                                 </div>
                                 <br><br>
                                 <div class="flexRowCheckbox">
@@ -115,8 +111,8 @@
                                 <br>
                                 <p>At l’Eglise Saint-Martin
                                 </br>Saturday, October 5th, 2019
-                                </br<>2.00 o’clock in the afternoon
-                                </br<>1390 Grez-Doiceau, Belgium</p>
+                                </br>2.00 o’clock in the afternoon
+                                </br>1390 GREZ-DOICEAU, BELGIUM</p>
                                 <br>
                                 <p class="titleText">Reception</p>
                                 <p>Mrs François Léonard
@@ -134,37 +130,33 @@
                                 <br>
                                 <p class="titleText">Party</p>
                                 <p>Malo & Seb 
-                                </br>Are happy to welcome you
-                                </br>to their wedding party at la ferme d’Arnelle
+                                </br>would be happy to see you on the dance floor
+                                </br>at their wedding party at la ferme d’Arnelle
                                 </br>On Saturday, October 5th at 10.30 pm.</p>
-                                <br><br>
-                                <p>Which parts will you attend?</p>
                             </div>
                             <br><br><br>
                             <%= form_for :form, url: answer_1_path  do |f|%>
                                 <div class="flexRow">
                                     <div class="flexRowItem">
-                                        <%= f.label :prenom, 'First Name'%>
+                                        <%= f.label :prenom, 'First Name(s)'%>
+                                        <div style="width: 10px;"></div>
                                         <%= f.text_field :prenom %>
                                     </div>
                                     <div class="flexRowItem">
-                                        <%= f.label :nom, 'Last Name'%>
+                                        <%= f.label :nom, 'Last Name(s)'%>
                                         <%= f.text_field :nom %>    
                                     </div>
                                 </div>
                                 <br><br>
                                 <div class="flexRow">
                                     <div class="flexRowItem">
-                                        <%= f.label :invite, 'Will you be bringing someone? If so, name him/her down below' %>
-                                        <%= f.text_field :invite %>
+                                        <%= f.label :invite, 'Which song makes you dance all night long?' %>
+                                        <%= f.text_field :dance_question  %>
                                     </div>
                                 </div>
                                 <br><br>
-                                <div class="flexRow">
-                                    <div class="flexRowItem">
-                                        <%= f.label :invite, 'Which song makes you dance all night long?' %>
-                                        <%= f.text_field :dance_question, id: 'danceQuestion'  %>
-                                    </div>
+                                 <div style="display: flex; justify-content: center;">
+                                    <p style="font-size: 24px;">Which parts will you attend?</p>
                                 </div>
                                 <br><br>
                                 <div class="flexRowCheckbox">
